@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Application Form</title>
+<script> src="email.js"</script>
+</head>
+<body>
+<center>
+<h1>Application form</h1>
+</center>
+<form name="myForm" onsubmit="return validateForm();">
+<img src="avatar.jpeg"width"70" height=70" alt="photo">
+<br>
+<br>  
+ Firstname:         
+<input type="text" id="firstname" name="firstname">                                                                                                                                      
+<br>
+<br>
+Date of Birth:
+<input type="date" id="DOB" name="DOB">  
+<br>
+<br>
+Address: 
+<br>
+<textarea cols="80" rows="5" value="address">  
+</textarea>
+<br>
+<br>
+Gender: 
+<br>  
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="Others"> Others
+<br> 
+<br>   
+Course:
+<br>
+<select>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="M.Tech">M.Tech</option>
+</select>
+<br>  
+<br> 
+<label id="em">Email:</label>
+<input type="email" placeholder="Enter your Email here" name="Email" id="email">
+<br>
+<br>
+<label id="mob">Mobile No:</label>
+<input type="text" placeholder="Enter Mobile Number here" name="mobno" id="mobnu"><br>
+<br>
+<br>
+Programming Skills:
+<br> 
+<input type="checkbox" id="C" name="C" value="C">    
+<label>C</label><br>    
+<input type="checkbox" id="Java" name="Java" value="Java">
+<label>Java</label> <br>    
+<input type="checkbox" id="Python" name="Python" value="Python">    
+<label>Python</label> <br>  
+<input type="checkbox" id="PHP" name="PHP" value="PHP">    
+<label>PHP</label>
+<br>
+<br>
+<button type="submit">Submit</button>
+&nbsp; &nbsp; &nbsp; <button type="reset" value="Reset">Reset</button>
+<button type="button" onclick="alert ("cancel")>Cancel</button>
+</form>  
+</body>  
+</html>

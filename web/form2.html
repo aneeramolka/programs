@@ -2,13 +2,13 @@
 <head>
 <title>Application Form</title>
 </head>
-<script type="text/javascript">
-function 
+<body>
 <center>
 <h1>Application Form</h1>
 </center>
-<form>
-<img src="avatar.jpeg" width="70" height="70">
+<form onsubmit="return Validate()"action="message.html">
+<img src="avatar.jpeg" width="70" height="70" alt="photo">
+<br>
 <br>
 Firstname:
 <input type="text" name="firstname">
@@ -48,6 +48,9 @@ Course:
 </select>
 <br>
 <br>
+phone number:
+<input id="tel" id="phone" name="phone"pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+<br>
 Programming Skills:
 <br>
 <input type="checkbox" id="C" name="C" value="C">
@@ -60,8 +63,10 @@ Programming Skills:
 <label>PHP</label><br>
 <br>
 <br>
-<input type="button" value="Register">
-<input type="button" value="Cancel">
+<button onclick="validate()"type="register">submit</button>
+<button type="button"onclick="alert("register")">register</button>
+<button type="button"onclick="alert("cancel")>cancel</button>
+<script>
 </form>
 </body>
 </html>
