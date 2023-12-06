@@ -1,4 +1,2 @@
 my first file
-this file
-
 contains three lines
